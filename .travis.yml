@@ -1,0 +1,18 @@
+language: c
+
+addons:
+  apt:
+    packages:
+      - graphicsmagick
+      - gv
+      - libmotif-dev
+      - libcurl4-openssl-dev
+      - libpcre3-dev
+      - libproj-dev
+      - libdb5.3-dev
+      - libax25-dev
+      - shapelib
+      - libshp-dev
+      - festival-dev
+      - libgeotiff-dev
+      - libgraphicsmagick1-dev
