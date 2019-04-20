@@ -37,12 +37,20 @@ matrix:
             - libmotif-dev
             - libcurl4-openssl-dev
             - libpcre3-dev
-            - libproj-dev
             - libdb5.3-dev
             - shapelib
             - libshp-dev
             - libmagickcore-dev
-    - os: macos
+    - os: osx
       name: "MacOS"
-      before_script: # For some reason the homebrew addon isn't work so do it manually 
-        - brew install berkeley-db graphicsmagick graphicsmagick openmotif pcre proj shapelib wget 
+      addons:
+        homebrew:
+          packages:
+            - berkeley-db
+            - graphicsmagick
+            - libgeotiff
+            - openmotif
+            - pcre
+            - proj
+            - shapelib
+            - wget
