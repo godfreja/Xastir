@@ -6,6 +6,18 @@ script:
   - make
   - sudo make install
 
+addons:
+  homebrew:
+    packages:
+      - berkeley-db
+      - graphicsmagick
+      - libgeotiff
+      - openmotif
+      - pcre
+      - proj
+      - shapelib
+      - wget
+
 matrix:
   include:
     - os: linux
@@ -41,7 +53,7 @@ matrix:
             - libdb5.3-dev
             - shapelib
             - libshp-dev
-            - libmagickcore-6.q16-dev
+            - libmagickcore-dev
     - os: macos
       name: "MacOS"
       addons:
