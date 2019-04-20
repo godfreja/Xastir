@@ -4,7 +4,6 @@ addons:
   apt:
     packages:
       - graphicsmagick
-      - gv
       - libmotif-dev
       - libcurl4-openssl-dev
       - libpcre3-dev
@@ -16,3 +15,9 @@ addons:
       - festival-dev
       - libgeotiff-dev
       - libgraphicsmagick1-dev
+
+script:
+  - ./bootstrap.sh
+  - ./configure
+  - make
+  - sudo make install
